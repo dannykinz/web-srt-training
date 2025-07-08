@@ -1,0 +1,629 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #060606;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+h1 {
+    color: #ffcc00;
+    text-align: center;
+}
+
+a {
+    color: #ffcc00;
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.card, .card-2, .card-3 {
+    background-color: #1a1a1a;
+    border: 1px solid #333;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+.card-2 {
+    background-color: #f0f0f0;
+}
+
+.card-3 {
+    background-color: #545454;
+}
+
+/* Big title styles */
+.big-title {
+    font-size: 7em;
+    margin-bottom: 10px;
+}
+
+/* ID Seclector */
+#hero-title {
+    margin-top: 20px;
+}
+
+.hero-h1 {
+    font-size: 5em;
+    color: #ffcc00;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Grouping Selector */
+
+/* h1, h2, h3, h4, h5 {
+    font-family: 'Times New Roman', Times, serif;
+} */
+
+/* Box Model Styling */
+.box-model {
+    background-color: #333;
+    padding: 20px;
+    border: 2px solid #ffcc00;
+    margin-top: 60px;
+}
+
+.box-model p {
+    margin: 24px 0;
+}
+
+.box-model ul {
+    margin: 24px 0;
+}
+
+/* Text Styling */
+
+.text-wrap {
+    margin-top: 40px;
+
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 32px;
+    color: #333;
+    text-align: center;
+    text-decoration: none;
+    text-transform: capitalize;
+
+}
+
+.text-wrap span {
+    text-decoration: underline;
+    color: #ffff;
+    font-weight: bold;
+    font-style: italic;
+}
+
+h1, h2, h3 {
+    text-transform: uppercase;
+}
+
+
+/* Flex Box Layout Styling */
+
+.flex-item {
+    background-color: #ffcc00;
+    color: #060606;
+    width: 250px;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    flex-grow: 1;
+}
+
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+
+/* Flexbox Navbar */
+
+.flex-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.flex-nav span {
+    font-size: 4rem;
+    font-weight: 900;
+}
+
+.nav-links {
+    display: flex;
+    gap: 24px;
+    border: 1px solid #333;
+    padding: 18px 24px;
+    font-size: 18px;
+    border-radius: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-links a {
+    color: #333;
+    transition: all .3s ease-in;
+}
+
+.nav-links a:hover {
+    color: #ffcc00
+}
+
+.nav-btn {
+    background-color: #060606;
+    outline: none;
+    border: 1px solid #333;
+    color: #fff;
+    font-size: 18px;
+    padding: 14px 28px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all .3s ease-in;
+}
+
+.nav-btn:hover {
+    background-color: #ffcc00;
+    color: #060606;
+    border: none;
+}
+
+.about-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    margin-top: 60px;
+}
+
+.about-image {
+    width: 550px;
+    height: 550px;
+    border-radius: 50%;
+}
+
+.about-copy {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+.about-copy span {
+    font-size: 18px;
+    color: #ffcc00;
+    font-style: italic;
+}
+
+.about-copy h2 {
+    font-size: 36px;
+    color: #fff;
+    text-transform: capitalize;
+}
+
+.about-copy p {
+    font-size: 18px;
+    color: #fff;
+    line-height: 1.6;
+}
+
+.about-btn {
+    background-color: #ffcc00;
+    color: #060606;
+    padding: 14px 28px;
+    border: none;
+    outline: none;
+    border-radius: 50px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Hero Section 1 Styling With Image Background */
+
+.hero-section1 {
+    background-image: url('/images/test_pohoa9.avif');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+}
+
+/* Adding Overlay to BG */
+.hero-section1::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(6, 6, 6, 0.4);
+    z-index: -1;
+}
+
+
+.hero-section1 h1 {
+    color: #ffcc00;
+    font-size: 5.5rem;
+    line-height: 4.6rem;
+    text-align: right;
+    font-weight: 800;
+    text-transform: capitalize;
+}
+
+.from-left {
+    text-align: left;
+    padding-right: 60px;
+}
+
+.hero-section1 p {
+    color: #fff;
+    font-size: 18px;
+    line-height: 26px;
+    text-align: center;
+    font-weight: 600;
+    max-width: 350px;
+}
+
+.hero-btn {
+    background-color: #fff;
+    color: #060606;
+    padding: 18px 32px;
+    border-radius: 50px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+
+.pseudo {
+    font-size: 50px;
+    text-align: center;
+    margin-top: 200px;
+    position: relative;
+}
+
+.pseudo::before {
+    content: "Before";
+    position: absolute;
+    top: 0px;
+    left: 150px;
+    color: #ffcc00;
+}
+
+.pseudo::after {
+    content: "After";
+    position: absolute;
+    top: 0px;
+    right: 300px;
+    color: #ffcc00;
+}
+
+
+/* Hero Section with Gradient background */
+
+.hero-section2 {
+    background: linear-gradient(90deg, #AE5BE5, #FEB35A, #B7CAC4, #F53D56);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.hero-section2 h1 {
+    color: #060606;
+    font-size: 5rem;
+    line-height: 4.6rem;
+    text-align: center;
+    font-weight: 800;
+    text-transform: capitalize;
+
+    max-width: 700px;
+}
+
+.hero-section2 p {
+    color: #fff;
+    font-size: 18px;
+    line-height: 26px;
+    text-align: center;
+    font-weight: 600;
+    max-width: 600px;
+}
+
+
+/* Hero section with image and gradient faded overlay */
+
+.hero-section3 {
+    background-image: url('/images/Classico.png');
+    background-position: 50% 40%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+   display: flex;
+    justify-content: start;
+    position: relative;
+    z-index: 1;
+}
+
+.hero3-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 20px;
+}
+
+.hero-section3::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to left, rgba(0,0,0,0.1) 30%, #060606 70%);
+    z-index: -1;
+}
+
+.hero-copy3 {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+    max-width: 550px;
+}
+
+.hero-copy3 h1 {
+    color: #ffcc00;
+    font-size: 3rem;
+    line-height: 3.2rem;
+    text-align: left;
+    font-weight: 800;
+    text-transform: capitalize;
+}
+
+.hero-copy3 p {
+    color: #fff;
+    font-size: 18px;
+    line-height: 26px;
+    text-align: left;
+    font-weight: 600;
+}
+
+.hero-btn3 {
+    background-color: #ffcc00;
+    color: #060606;
+    padding: 18px 32px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+/* Hero Section with Video Background */
+
+.hero-section4 {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.hero-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+}
+
+.hero4-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color:rgba(6, 6, 6, 0.7);
+    z-index: 2;
+}
+
+.hero4-content {
+    position: relative;
+    z-index: 3;
+    text-align: center;
+    max-width: 500px;
+} 
+
+.hero4-content h1 {
+    font-size: 4.6rem;
+    line-height: 4.6rem;
+    font-weight: 800;
+    text-transform: capitalize;
+    color: #fff;
+}
+
+.hero4-content p {
+    font-size: 18px;
+    line-height: 26px;
+    color: #fff;
+    margin: 32px 0;
+}
+
+.hero-btn4 {
+    background-color: #3c70e1;
+    color: #fff;
+    padding: 18px 62px;
+    border-radius: 8px;
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease-in;
+}
+
+.hero-btn4:hover {
+    background-color: #fff;
+    color: #060606;
+}   
+
+
+/* Shadow on cards */
+
+.cardd-title {
+    text-align: center;
+    font-size: 2rem;
+    color: #ffcc00;
+    margin-top: 60px;
+}
+
+.cardd-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin: 60px 0;
+}
+
+.cardd {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    background-color: #1a1a1a;
+    padding: 20px;
+    gap: 14px;;
+    border-radius: 8px;
+    box-shadow: 0px 2px 12px rgba(225, 210, 49, 0.4);
+    transition: box-shadow 0.3s ease-in;
+}
+
+.cardd:hover {
+    box-shadow: 0px 4px 20px rgba(225, 210, 49, 0.6);
+}
+
+.cardd img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}   
+
+/* root font rem */
+
+html {
+    font-size: 100%; /* 1rem = 16px */
+}
+
+.cardd h3 {
+    font-size: 2.5rem;
+    color: #ffcc00;
+}
+
+/* Mobile Responsiveness Styling */
+
+@media (max-width: 768px) {
+
+html {
+        font-size: 50%; /* 1rem = 8px */
+    }
+
+    .container {
+        padding: 0 40px;
+    }
+
+    .flex-nav {
+        padding: 20px 0;
+    }
+
+    .flex-nav .nav-links {
+        display: none;
+    }
+
+    .cardd-container {
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .cardd {
+        width: 100%;
+        max-width: 400px;
+        margin: 0 auto;
+    }
+
+    .about-flex {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-image {
+        width: 100%;
+        height: auto;
+    }
+}
+
+
+/* Tablet View Responsiveness */
+
+@media (max-width: 1024px) {
+    html {
+        font-size: 75%; /* 1rem = 12px */
+    }
+
+    .container {
+        padding: 0 40px;
+    }
+
+    .flex-nav .nav-links {
+        display: none;
+    }
+
+    .about-flex {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-image {
+        width: 100%;
+        height: auto;
+    }
+}
